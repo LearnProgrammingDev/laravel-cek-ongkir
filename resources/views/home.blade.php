@@ -73,6 +73,9 @@
                                 <label for="">Kota/Kabupaten</label>
                                 <select name="destination_city" id="" class="form-control">
                                     <option value="#">-</option>
+                                    @foreach ($province as $key => $value)
+                                        <option value="{{ $key }}">{{ $value }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
